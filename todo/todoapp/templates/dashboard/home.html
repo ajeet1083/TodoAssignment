@@ -1,0 +1,36 @@
+{% extends 'dashboard/base.html' %} 
+{% load static %} 
+{% block content %}
+
+<section class="container text-center">
+  <h3>Welcome</h3>
+
+  <hr> <br>
+  
+
+    
+  <div class="row justify-content-center">
+    <div class="col-md-3">
+      <a href="{% url 'todo' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/todo.jpg' %}" alt="todo image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              To Do
+            </h5>
+            Add your to-do lists for your day and remove them as you finish
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+</section>
+
+{% endblock content %}
+
+
+{% block custom_js %}
+
+{% endblock custom_js %}
